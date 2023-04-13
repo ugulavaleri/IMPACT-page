@@ -74,10 +74,15 @@ ul {
     display: none;
 
     position: absolute;
+
+    z-index: 50;
+    left: -100vw;
+
+    transition: left 0.5s;
+}
+.insideMobileMenu {
     height: 100vh;
     width: 100vw;
-    z-index: 50;
-    right: -100%;
 
     display: flex;
     justify-content: center;
@@ -85,8 +90,6 @@ ul {
 
     background-color: rgba(31, 31, 31, 0.695);
     backdrop-filter: blur(4px);
-
-    transition: 0.5s;
 }
 .mobileMenu li {
     list-style: none;
@@ -97,11 +100,12 @@ ul {
     margin-bottom: 0px;
 }
 .mobileMenu li a {
+    font-size: 25px;
     text-decoration: none;
     color: #fff;
 }
-.right {
-    right: 0;
+.left {
+    left: 0;
 }
 .scrollHide {
     overflow-y: hidden;
@@ -272,9 +276,7 @@ ul {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    /* padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 80px; */
+
     padding: 0px 20px 80px 20px;
     gap: 60px;
 }
@@ -283,7 +285,6 @@ ul {
     line-height: 35px;
     max-width: 660px;
     width: 100%;
-    /* padding-bottom: 80px; */
 }
 .blue-part {
     display: grid;
@@ -303,7 +304,6 @@ ul {
     max-width: 250px;
     width: 100%;
     margin: 0 auto;
-    /* flex-direction: column; */
     gap: 19px;
 }
 .blue-part-box h3 {
@@ -347,8 +347,6 @@ ul {
     margin-top: 70px;
 }
 .Buttons-container {
-    /* max-width: 100%;
-    width: 100%; */
     gap: 35px;
     margin-top: 70px;
 }
@@ -446,9 +444,6 @@ ul {
     padding: 60px 20px 0px 20px;
 }
 .project-recents-body {
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
-
     display: flex;
     flex-shrink: 0;
     justify-items: center;
@@ -799,7 +794,7 @@ footer ul a {
     border-radius: 8px;
 
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     bottom: 100px;
     right: -70px;
     background-color: black;

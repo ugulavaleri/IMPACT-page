@@ -4,7 +4,7 @@ fetch("https://jsonplaceholder.typicode.com/photos")
     })
     .then((response) => {
         console.log(response);
-        // console.log(response[500].albumId);
+
         photos(response);
     })
     .catch((error) => {
@@ -58,25 +58,19 @@ window.addEventListener("scroll", () => {
     // scrollToTop.style.opacity = "1";
     // scrollToTop.classList.remove("opacity");
 
-    if (window.scrollY > 900) {
+    if (window.scrollY > 1600) {
         scrollToTop.classList.add("show");
     } else {
         scrollToTop.classList.remove("show");
     }
+    console.log("leri");
 });
-// scrollToTopLink.addEventListener("click", () => {
-//     if (window.scrollY > 900) {
-//         scrollToTop.classList.add("opacity");
-//     } else {
-//         scrollToTop.classList.remove("opacity");
-//     }
-// });
 
 const mobileHamburger = document.getElementById("mobileHamburger");
 const mobileMenu = document.querySelector(".mobileMenu");
+// document.documentElement.style.overflowX = "hidden";
+
 mobileHamburger.addEventListener("click", () => {
-    // mobileHamburger.style.position = "relative";
-    // mobileHamburger.style.zIndex = "999";
-    mobileMenu.classList.toggle("right");
+    mobileMenu.classList.toggle("left");
     document.body.classList.toggle("scrollHide");
 });

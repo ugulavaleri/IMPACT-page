@@ -1,9 +1,12 @@
-@media (max-width: 768px) {
+@media (max-width: 967px) {
     header nav {
         display: none;
     }
     body {
         height: 3000px;
+    }
+    .mobileMenu {
+        display: inline-block;
     }
     .impact-text-container {
         flex-direction: column;
@@ -57,9 +60,6 @@
         position: relative;
         margin-top: 0;
     }
-    /* .footerResponsive {
-        grid-template-columns: 1fr;
-    } */
     .footer-container {
         grid-template-columns: 1fr;
     }
@@ -95,7 +95,7 @@
         bottom: 40px;
     }
     .scroll-to-top a {
-        font-size: 20px;
+        font-size: 25px;
         line-height: 45px;
     }
 }
