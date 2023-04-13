@@ -10,6 +10,7 @@ body {
     font-family: "Roboto";
     position: relative;
     /* background-color: #f7f7f7; */
+    overflow-x: hidden;
 }
 section {
     background-color: #f7f7f7;
@@ -59,12 +60,52 @@ ul {
 }
 .mobile-slide-icon {
     display: none;
+    position: relative;
+    z-index: 999;
 }
 .mobile-slide-icon img {
     width: 35px;
     vertical-align: middle;
 }
 
+/*-------------------------------*/
+/* mobile navigation */
+.mobileMenu {
+    display: none;
+
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 50;
+    right: -100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(31, 31, 31, 0.695);
+    backdrop-filter: blur(4px);
+
+    transition: 0.5s;
+}
+.mobileMenu li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mobileMenu li:last-child {
+    margin-bottom: 0px;
+}
+.mobileMenu li a {
+    text-decoration: none;
+    color: #fff;
+}
+.right {
+    right: 0;
+}
+.scrollHide {
+    overflow-y: hidden;
+}
 /*-------------------------------*/
 /* .firstSection {
     display: flex;

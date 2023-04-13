@@ -71,3 +71,12 @@ window.addEventListener("scroll", () => {
 //         scrollToTop.classList.remove("opacity");
 //     }
 // });
+
+const mobileHamburger = document.getElementById("mobileHamburger");
+const mobileMenu = document.querySelector(".mobileMenu");
+mobileHamburger.addEventListener("click", () => {
+    // mobileHamburger.style.position = "relative";
+    // mobileHamburger.style.zIndex = "999";
+    mobileMenu.classList.toggle("right");
+    document.body.classList.toggle("scrollHide");
+});
