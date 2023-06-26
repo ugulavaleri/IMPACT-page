@@ -196,9 +196,7 @@ ul {
 }
 .BannerContainer {
     display: flex;
-
     overflow: hidden;
-    /* position: relative; */
 }
 .Banner {
     transition: transform 0.5s;
@@ -218,7 +216,6 @@ ul {
 }
 .BannerBox img {
     width: 100%;
-
     height: 250px;
     vertical-align: top;
 }
